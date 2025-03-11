@@ -1,10 +1,10 @@
 "use client";
-import { useContextElement } from "@/context/Context";
-import { icons, menuItems } from "@/data/menu";
-import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useContextElement } from "@/context/Context";
+import { icons, menuItems } from "@/data/menu";
+import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
 import { useEffect, useRef, useState } from "react";
 
 export default function MobileMenu() {

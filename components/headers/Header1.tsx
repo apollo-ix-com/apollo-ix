@@ -39,17 +39,11 @@ export default function Header1() {
           style={{ "--uc-nav-height": "32px" } as React.CSSProperties}
           className="uc-navbar-top bg-primary-700 text-white uc-dark d-none lg:d-block"
         >
-          <div className="hide-on-sticky">
+          <div className="hide-on-sticky marquee-text">
             <div className="container container-expand max-w-1440px">
               <div className="uc-navbar min-h-32px fs-8">
                 <div className="uc-navbar-left">
                   <ul className="uc-navbar-nav gap-2 fw-medium">
-                    {/* <li>
-                                    <a href="#">Customer stories</a>
-                                </li>
-                                <li>
-                                    <Link href="/page-terms">Terms and conditions</Link>
-                                </li> */}
                     <li>
                       <Link href="#">
                         <span>
@@ -61,7 +55,7 @@ export default function Header1() {
                     </li>
                   </ul>
                 </div>
-                <div className="uc-navbar-right">
+                {/* <div className="uc-navbar-right">
                   <div className="uc-navbar-item">
                     <a
                       className="btn btn-xs p-0 fs-8 text-white"
@@ -71,13 +65,13 @@ export default function Header1() {
                       <span>XXX XXX XXXX</span>
                     </a>
                   </div>
-                  {/* <div className="uc-navbar-item">
-              <a className="btn btn-xs p-0 fs-8 text-white" href="#chat">
-                <i className="icon-narrow unicon-chat-bot" />
-                <span>Live Chat</span>
-              </a>
-            </div> */}
-                </div>
+                  <div className="uc-navbar-item">
+                    <a className="btn btn-xs p-0 fs-8 text-white" href="#chat">
+                      <i className="icon-narrow unicon-chat-bot" />
+                      <span>Live Chat</span>
+                    </a>
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -93,10 +87,10 @@ export default function Header1() {
             >
               <div className="uc-navbar-left">
                 <div className="uc-logo text-dark dark:text-white">
-                 <Logo />
+                  <Logo />
                 </div>
                 <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ltr:ms-2 ltr:xl:ms-4 rtl:me-2 rtl:xl:me-4">
-                 <Nav1 />
+                  <Nav1 />
                 </ul>
               </div>
               <div className="uc-navbar-right">

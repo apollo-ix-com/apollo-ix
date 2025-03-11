@@ -5,6 +5,7 @@ import Link from "next/link";
 import Blog from "@/components/blog/Blogs1";
 import NetworkMap from "@/components/network/NetworkMap";
 import Brands from "@/components/common/Brands";
+import TyperComponent from "@/components/common/TyperComponent";
 
 export default function HomePage() {
   return (
@@ -23,8 +24,18 @@ export default function HomePage() {
                     className="panel vstack gap-2 text-center lg:text-start rtl:lg:text-end xl:me-4"
                     data-anime="targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
                   >
-                    <h1 className="h6 sm:display-5 xl:display-6 fw-light mb-1 xl:mb-2">
-                      Enabling seamless, secure, and high-speed interconnection
+                    <h1 className="h6 sm:display-5 xl:display-3 fw-light mb-1 xl:mb-2 text-blue">
+                      Enabling seamless,{" "}
+                      <span
+                        className="text-tertiary dark:text-primary"
+                        data-uc-typed="typeSpeed: 80; backSpeed: 50; backDelay: 1500; loop: true;"
+                      >
+                        <TyperComponent
+                          strings={[
+                            "network interconnection" ,"optimized traffic flow" ,"and secure peering"
+                          ]}
+                        />
+                      </span>
                     </h1>
                     <p className="fs-6 xl:fs-4 mb-6">
                       {/* <br className="d-none lg:d-block" /> */}

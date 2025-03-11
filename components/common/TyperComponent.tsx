@@ -1,8 +1,14 @@
 "use client";
 
-const demostrings = ["Bank Account", "Web Payment", " Android & ISO"];
 import { TypeAnimation } from "react-type-animation";
-export default function TyperComponent({ strings = demostrings }) {
+
+const demostrings: string[] = [""];
+
+interface TyperComponentProps {
+  strings?: string[]; // Optional prop with a default value
+}
+
+export default function TyperComponent({ strings = demostrings }: TyperComponentProps) {
   return (
     <TypeAnimation
       sequence={[...strings.flatMap((element) => [element, 2000])]}

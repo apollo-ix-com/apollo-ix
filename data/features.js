@@ -414,6 +414,54 @@ export const features5 = [
 //     link: null,
 //   },
 // ];
+// export const features6 = [
+//   {
+//     id: 1,
+//     imgSrc: "/assets/images/template/demo.svg",
+//     imgAlt: "Simplify Bilateral Peering Agreements",
+//     title: "Simplify Bilateral Peering Agreements",
+//     description:
+//       "Easily connect two networks with secure and efficient bilateral peering. Enjoy smooth data exchange for improved performance and reliability.",
+//     link: { text: "Learn More About Bilateral Peering", href: "#" },
+//   },
+//   {
+//     id: 2,
+//     imgSrc: "/assets/images/template/demo.svg",
+//     imgAlt: "Expand Connectivity with Public Peering",
+//     title: "Expand Connectivity with Public Peering",
+//     description:
+//       "Boost your reach and scalability by connecting to multiple networks via public peering points. Enjoy better traffic flow and reduced latency at lower costs.",
+//     link: { text: "Learn More About Public Peering", href: "#" },
+//   },
+//   {
+//     id: 3,
+//     imgSrc: "/assets/images/template/demo.svg",
+//     imgAlt: "Enhance Security with Private Peering",
+//     title: "Enhance Security with Private Peering",
+//     description:
+//       "Get better control and performance with dedicated private peering connections — ideal for critical data exchanges that demand higher security.",
+//     link: { text: "Learn More About Private Peering", href: "#" },
+//   },
+//   {
+//     id: 4,
+//     imgSrc: "/assets/images/template/demo.svg",
+//     imgAlt: "Ensure Optimal Routing with IP Peering",
+//     title: "Ensure Optimal Routing with IP Peering",
+//     description:
+//       "Speed up data flow between ISPs with IP Peering solutions. Benefit from smarter routing for improved performance.",
+//     link: { text: "Learn More About IP Peering", href: "#" },
+//   },
+//   {
+//     id: 5,
+//     imgSrc: "/assets/images/template/demo.svg",
+//     imgAlt: "Achieve Global Reach with Remote Peering",
+//     title: "Achieve Global Reach with Remote Peering",
+//     description:
+//       "Expand your network across borders without extra infrastructure. Access remote exchange points for better connectivity.",
+//     link: { text: "Learn More About Remote Peering", href: "#" },
+//   },
+// ];
+
 export const features6 = [
   {
     id: 1,
@@ -421,16 +469,16 @@ export const features6 = [
     imgAlt: "Simplify Bilateral Peering Agreements",
     title: "Simplify Bilateral Peering Agreements",
     description:
-      "Easily connect two networks with secure and efficient bilateral peering. Enjoy smooth data exchange for improved performance and reliability.",
-    link: null,
+      "Effortlessly connect networks with secure bilateral peering. Improve data exchange, enhance performance, boost reliability.",
+    link: { text: "Learn More About Bilateral Peering", href: "#" },
   },
   {
     id: 2,
     imgSrc: "/assets/images/template/demo.svg",
-    imgAlt: "Expand Connectivity with Public Peering",
-    title: "Expand Connectivity with Public Peering",
+    imgAlt: "Expand Connectivity Public Peering",
+    title: "Expand Connectivity Public Peering",
     description:
-      "Boost your reach and scalability by connecting to multiple networks via public peering points. Enjoy better traffic flow and reduced latency at lower costs.",
+      "Maximize network reach with public peering points. Enjoy improved traffic flow, reduced latency, and cost-effective connectivity.",
     link: { text: "Learn More About Public Peering", href: "#" },
   },
   {
@@ -439,8 +487,8 @@ export const features6 = [
     imgAlt: "Enhance Security with Private Peering",
     title: "Enhance Security with Private Peering",
     description:
-      "Get better control and performance with dedicated private peering connections — ideal for critical data exchanges that demand higher security.",
-    link: null,
+      "Strengthen security with private peering links. Ensure seamless data flow, better control, and enhanced performance for vital exchanges.",
+    link: { text: "Learn More About Private Peering", href: "#" },
   },
   {
     id: 4,
@@ -448,8 +496,8 @@ export const features6 = [
     imgAlt: "Ensure Optimal Routing with IP Peering",
     title: "Ensure Optimal Routing with IP Peering",
     description:
-      "Speed up data flow between ISPs with IP Peering solutions. Benefit from smarter routing for improved performance.",
-    link: null,
+      "Improve routing efficiency with IP peering. Optimize data paths, boost speed, and ensure a reliable connection between ISPs.",
+    link: { text: "Learn More About IP Peering", href: "#" },
   },
   {
     id: 5,
@@ -457,8 +505,8 @@ export const features6 = [
     imgAlt: "Achieve Global Reach with Remote Peering",
     title: "Achieve Global Reach with Remote Peering",
     description:
-      "Expand your network across borders without extra infrastructure. Access remote exchange points for better connectivity.",
-    link: { text: "Explore Remote Peering Solutions", href: "#" },
+      "Expand your network footprint with remote peering. Connect globally without additional infrastructure, ensuring seamless communication.",
+    link: { text: "Learn More About Remote Peering", href: "#" },
   },
 ];
 

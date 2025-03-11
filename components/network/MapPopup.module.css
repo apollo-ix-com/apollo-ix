@@ -1,0 +1,72 @@
+.popupContainer {
+    max-width: 250px;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 1px solid #ddd;
+  }
+  
+  .popupHeader {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 10px;
+  }
+  
+  .popupHeader p {
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: none;
+    opacity: 0.9;
+  }
+  
+  .popupContent {
+    padding: 12px;
+    background-color: #f9f9f9;
+    display: grid;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #333;
+  }
+  
+  .popupContent div {
+    margin: 0;
+  }
+  
+
+  .dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dataTable tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dataTable tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .dataLabel {
+    font-weight: 600;
+    color: #555;
+    background-color: #f3f3f3;
+    padding: 5px 12px;
+    text-align: left;
+    width: 40%;
+  }
+  
+  .dataValue {
+    padding: 5px 12px;
+    color: #333;
+    text-align: center;
+    word-break: break-word;
+  }
+  

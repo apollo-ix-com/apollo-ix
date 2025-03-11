@@ -1,14 +1,16 @@
 import { features, featuresMenu, services } from "@/data/menu";
-import { openNewsletterModal } from "@/utlis/toggleNewsletterModal";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Nav1() {
   return (
     <>
+    <li>
+      <Link href={"/"}>Home</Link>
+    </li>
       <li className="has-dd-menu ">
         <a href="#" role="button" aria-haspopup="true">
-          Products{" "}
+          Products & Services{" "}
           <span
             data-uc-navbar-parent-icon=""
             className="uc-icon uc-navbar-parent-icon"
@@ -32,9 +34,9 @@ export default function Nav1() {
                     <div className="panel vstack gap-4">
                       <div className="hstack gap-4 justify-between">
                         <h5 className="h5 fw-medium m-0">
-                          Discover our Products &amp; Solutions
+                          Discover our Products &amp; Services
                         </h5>
-                        <Link
+                        {/* <Link
                           href={`/#`}
                           className="btn btn-sm dark:text-white"
                         >
@@ -42,7 +44,7 @@ export default function Nav1() {
                           <span className="cstack w-32px h-32px rounded-circle bg-primary-100 dark:bg-primary">
                             <i className="icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                           </span>
-                        </Link>
+                        </Link> */}
                       </div>
                       <div className="row child-cols-4 g-3">
                         {features.map((feature, index) => (
@@ -172,9 +174,7 @@ export default function Nav1() {
                       className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
                       href={feature.href}
                     >
-                      <i
-                        className={`icon-1 ${feature.iconClass} fw-bold text-primary dark:text-secondary`}
-                      />
+                      <i className={`icon-1 ${feature.iconClass} fw-bold text-primary dark:text-secondary`}/>
                       <span className="vstack gap-narrow mt-nnarrow">
                         <b className="fw-bold dark:text-white">
                           {feature.title}
@@ -238,7 +238,7 @@ export default function Nav1() {
           </div>
         </div>
       </li>
-      <li className="has-dd-menu" style={{ position: "relative" }}>
+      {/* <li className="has-dd-menu" style={{ position: "relative" }}>
         <a href="#" role="button" aria-haspopup="true">
           Learn{" "}
           <span
@@ -280,7 +280,6 @@ export default function Nav1() {
                 <li>
                   <a
                     className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    onClick={openNewsletterModal}
                     role="button"
                   >
                     <i className="icon-1 unicon-email fw-bold text-primary dark:text-secondary" />
@@ -344,10 +343,16 @@ export default function Nav1() {
             </div>
           </div>
         </div>
-      </li>
-      {/* <li>
-        <Link href={`#`}>Pricing</Link>
       </li> */}
+      <li>
+        <Link href={"/apollo-ix"}>Apollo-IX</Link>
+      </li>
+      <li>
+        <Link href={"/global"}>Global</Link>
+      </li>
+      <li>
+        <Link href={"/contact"}>Contact</Link>
+      </li>
       {/* <li>
         <a
           href="https://themeforest.net/user/ib-themes/portfolio"

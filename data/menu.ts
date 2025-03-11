@@ -8,42 +8,6 @@ export const menuItems = [
         label: "Home 1",
       },
       {
-        href: "/home-2",
-        label: "Home 2",
-      },
-      {
-        href: "/home-3",
-        label: "Home 3",
-      },
-      {
-        href: "/home-4",
-        label: "Home 4",
-      },
-      {
-        href: "/home-5",
-        label: "Home 5",
-      },
-      {
-        href: "/home-6",
-        label: "Home 6",
-      },
-      {
-        href: "/home-7",
-        label: "Home 7",
-      },
-      {
-        href: "/home-8",
-        label: "Home 8",
-      },
-      {
-        href: "/home-9",
-        label: "Home 9",
-      },
-      {
-        href: "/home-10",
-        label: "Home 10",
-      },
-      {
         href: "/rtl",
         label: "Home RTL",
       },
@@ -649,37 +613,38 @@ interface featuresType {
 }
 
 export const features: featuresType[] = [
-  { id: 1, iconClass: "mdi mdi-connection", title: "Peering", description: "Optimize network performance.", href:"/peering" },
-  { id: 2, iconClass: "mdi mdi-shield-lock", title: "Security", description: "Advanced infrastructure protection.", href:"/peering" },
-  { id: 5, iconClass: "mdi mdi-server", title: "Infrastructure", description: "Support digital transformation.", href:"/peering" },
-  { id: 4, iconClass: "mdi mdi-cloud-outline", title: "Cloud", description: "Scalable cloud solutions.", href:"/peering" },
-  { id: 3, iconClass: "mdi mdi-transfer", title: "Interconnection", description: "Seamless data exchange.", href:"/peering" },
-  { id: 6, iconClass: "mdi mdi-view-grid-plus", title: "See all products", description: "Explore our full range.", href:"/peering" },
+  { id: 1, iconClass: "mdi mdi-connection", title: "Peering Services", description: "Optimize network performance.", href:"/peering-services" },
+  { id: 2, iconClass: "mdi mdi-shield-lock", title: "Security Services", description: "Advanced infrastructure protection.", href:"/security-services" },
+  { id: 5, iconClass: "mdi mdi-server", title: "Infrastructure Services", description: "Support digital transformation.", href:"/infrastructure-services" },
+  { id: 4, iconClass: "mdi mdi-cloud-check", title: "Cloud Services", description: "Scalable cloud solutions.", href:"/cloud-services" },
+  { id: 3, iconClass: "mdi mdi-transfer", title: "Interconnection Services", description: "Seamless data exchange.", href:"/interconnection-services" },
+  { id: 6, iconClass: "mdi mdi-router-wireless-settings", title: "Support Services", description: "Explore our full range.", href:"/support-services" },
 ];
+
 export const featuresMenu = [
   {
     href: "/page-features",
+    iconClass: "unicon-chart-venn-diagram",
+    title: "Helpdesk",
+    description: "",
+  },
+  {
+    href: "/page-features",
     iconClass: "unicon-checkmark",
-    title: "To-Do List",
-    description: "Managing multiple software and tools for different tasks.",
+    title: "Looking Glass",
+    description: "",
   },
   {
     href: "/page-features",
     iconClass: "unicon-chart-pie",
-    title: "Reports",
-    description: "The latest industry reports, updates and info.",
+    title: "Network Status",
+    description: "",
   },
   {
     href: "/page-features",
     iconClass: "unicon-increase-level",
-    title: "Spreadsheets",
-    description: "Suite of tools that cover all aspects of your business.",
-  },
-  {
-    href: "/page-features",
-    iconClass: "unicon-chart-venn-diagram",
-    title: "Collaboration",
-    description: "Assign tasks, share files, and communicate with your team.",
+    title: "Technical Resources",
+    description: "",
   },
 ];
 

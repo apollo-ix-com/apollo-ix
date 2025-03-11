@@ -3,10 +3,12 @@ import { useEffect } from "react";
 import anime from "animejs";
 import { ParallaxProvider } from "react-scroll-parallax";
 import { usePathname } from "next/navigation";
-import "swiper/css/virtual";
 import "swiper/css";
 import "swiper/css/thumbs";
+import "swiper/css/virtual";
 import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import 'swiper/css/pagination';
 import "photoswipe/dist/photoswipe.css";
 import "rc-slider/assets/index.css";
 import "../public/assets/css/main.scss";
@@ -15,9 +17,9 @@ import "../public/assets/libs/@mdi/font/css/materialdesignicons.min.css"
 import "../public/assets/libs/@iconscout/unicons/css/line.css"
 import Context from "@/context/Context";
 import BacktoTop from "@/components/common/BacktoTop";
+import MobileMenu from "@/components/headers/component/MobileMenu";
 
 // import Cart from "@/components/common/Cart";
-// import MobileMenu from "@/components/headers/component/MobileMenu";
 // import ContactModal from "@/components/modals/ContactModal";
 // import NewsletterModal from "@/components/modals/NewsletterModal";
 // import SearchModal from "@/components/modals/SearchModal";
@@ -87,7 +89,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body>
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
-          {/* <MobileMenu />
+          <MobileMenu />
+          {/* 
           <ContactModal />
           <NewsletterModal />
           <SearchModal />

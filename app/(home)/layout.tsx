@@ -5,7 +5,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 export const metadata = {
-  title: "Home || Apollo-IX ",
+  title: "Home - Apollo-IX ",
   description: "",
 };
 export default function Layout({ children }: LayoutProps) {
