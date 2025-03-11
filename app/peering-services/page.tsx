@@ -1,6 +1,5 @@
 "use client";
 
-import Hero from "@/components/innerpages/features/Hero";
 import KeyFeatures from "@/components/innerpages/features/KeyFeatures";
 import Faq from "@/components/homes/home-2/Faq";
 import Testimonials from "@/components/homes/home-3/Testimonials";
