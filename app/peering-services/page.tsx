@@ -14,39 +14,36 @@ import Brands from "@/components/common/Brands";
 export default function PeeringPage() {
   return (
     <>
-    
-    <div
-      id="hero_header"
-      className="hero-header section panel overflow-hidden"
-    >
-      <div className="position-absolute top-0 start-0 end-0 h-500px xl:h-screen bg-gray-900" />
-      
-      <div className="section-outer panel pb-6 sm:pb-9 pt-9 sm:pt-10">
-        <div className="container max-w-xl">
-          <div className="section-inner panel">
-            <div className="vstack gap-6 sm:gap-8 xl:gap-9">
-              <div className="panel text-center max-w-850px mx-auto uc-dark">
-                <div
-                  className="vstack items-center gap-2 text-white"
-                  data-anime="targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
-                >
-                  <h1 className="h2 sm:h1 lg:display-1 xl:display-1 mt-4 sm:mt-0">
-                  Empowering Your Connectivity. {" "}
-                    <br className="d-none sm:d-block" />
-                   
-                  </h1>
-                  <h1 className="h2 sm:h1 lg:display-6 xl:display-5 mt-4 sm:mt-0">
-                  
-                    Redefining Peering Excellence.
-                  </h1>
-                  <Link
-                    href={`#`}
-                    className="btn btn-md lg:btn-lg btn-primary text-white min-w-150px sm:mt-1 lg:mt-2"
-                  >
-                    Join Our Peering Platform
-                  </Link> 
+      <div
+        id="hero_header"
+        className="hero-header section panel overflow-hidden"
+      >
+        <div className="position-absolute top-0 start-0 end-0 h-500px xl:h-screen bg-gray-900" />
 
-                  {/* <h1 className="h2 sm:h1 lg:display-6 xl:display-4 mt-4 sm:mt-0">
+        <div className="section-outer panel pb-6 sm:pb-9 pt-9 sm:pt-10">
+          <div className="container max-w-xl">
+            <div className="section-inner panel">
+              <div className="vstack gap-6 sm:gap-8 xl:gap-9">
+                <div className="panel text-center max-w-850px mx-auto uc-dark">
+                  <div
+                    className="vstack items-center gap-2 text-white"
+                    data-anime="targets: >*; translateY: [24, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+                  >
+                    <h1 className="h2 sm:h1 lg:display-1 xl:display-1 mt-4 sm:mt-0">
+                      Empowering Your Connectivity.{" "}
+                      <br className="d-none sm:d-block" />
+                    </h1>
+                    <h1 className="h2 sm:h1 lg:display-6 xl:display-5 mt-4 sm:mt-0">
+                      Redefining Peering Excellence.
+                    </h1>
+                    <Link
+                      href={`#`}
+                      className="btn btn-md lg:btn-lg btn-primary text-white min-w-150px sm:mt-1 lg:mt-2"
+                    >
+                      Join Our Peering Platform
+                    </Link>
+
+                    {/* <h1 className="h2 sm:h1 lg:display-6 xl:display-4 mt-4 sm:mt-0">
   Empowering Your Connectivity. <br className="d-none sm:d-block" />
   Redefining Peering Excellence.
 </h1>
@@ -65,26 +62,25 @@ export default function PeeringPage() {
 >
   Join Our Peering Platform
 </Link> */}
+                  </div>
                 </div>
+                <PeeringSwiper />
               </div>
-              <PeeringSwiper/>
-            </div>
-            <div className="brands panel overflow-hidden mt-4 sm:mt-6 xl:mt-8 opacity-50">
-              <div
-                className="block-panel panel"
-                data-anime="onview: -100; opacity: [0, 1]; duration: 450; delay: 200;"
-              >
-                <div className="element-brands text-gray-900 dark:text-white">
-                  <Brands />
+              <div className="brands panel overflow-hidden mt-4 sm:mt-6 xl:mt-8 opacity-50">
+                <div
+                  className="block-panel panel"
+                  data-anime="onview: -100; opacity: [0, 1]; duration: 450; delay: 200;"
+                >
+                  <div className="element-brands text-gray-900 dark:text-white">
+                    <Brands />
+                  </div>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
- 
+
       <KeyFeatures />
       <div className="pt-6 xl:pt-9"></div>
       <Faq />

@@ -64,7 +64,6 @@ export default function Header2() {
                 {/* <div className="d-none xl:d-block">
                   <a
                     className="text-none fw-medium"
-                    onClick={openContactModal}
                     data-uc-toggle=""
                     role="button"
                   >
