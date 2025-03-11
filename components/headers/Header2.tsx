@@ -33,26 +33,26 @@ export default function Header2() {
 
   return (
     <>
-     <header
-      style={{ "--uc-nav-height": "80px" }}
-      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-dark uc-sticky  ${
-        scrollingUp ? " uc-sticky-below uc-sticky-fixed headerFixed" : ""
-      }`}
-      data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
-    >
-      <nav
-        className={`uc-navbar-container uc-navbar-float ft-tertiary z-1   ${
-          scrollingUp ? "uc-navbar-sticky" : "uc-navbar-transparent"
-        } `}
-        data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
-        style={{ transform: "translateY(0px)", opacity: 1 }}
+      <header
+        style={{ "--uc-nav-height": "80px" } as React.CSSProperties}
+        className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-dark uc-sticky  ${
+          scrollingUp ? " uc-sticky-below uc-sticky-fixed headerFixed" : ""
+        }`}
+        data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
       >
-        <div className="container max-w-xl">
-          <div
-            className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white"
-            data-uc-navbar="mode: click; animation: uc-animation-slide-top-small; duration: 150;"
-          >
-            <div className="uc-navbar-left">
+        <nav
+          className={`uc-navbar-container uc-navbar-float ft-tertiary z-1   ${
+            scrollingUp ? "uc-navbar-sticky" : "uc-navbar-transparent"
+          } `}
+          data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
+          style={{ transform: "translateY(0px)", opacity: 1 }}
+        >
+          <div className="container max-w-xl">
+            <div
+              className="uc-navbar min-h-64px lg:min-h-80px text-gray-900 dark:text-white"
+              data-uc-navbar="mode: click; animation: uc-animation-slide-top-small; duration: 150;"
+            >
+              <div className="uc-navbar-left">
                 <div className="uc-logo text-dark dark:text-white">
                   <Logo />
                 </div>
