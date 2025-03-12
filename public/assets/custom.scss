@@ -156,6 +156,9 @@
 header.uc-header.header-six .uc-navbar-nav > li > a.uc-active {
   color: var(--color-primary) !important;
 }
+.uc-navbar-nav > li > a.uc-active {
+  color: var(--color-primary) !important;
+}
 .menuActiveBg {
   background-color: var(--color-primary) !important;
   color: #fff !important;

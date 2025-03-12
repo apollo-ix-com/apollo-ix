@@ -5,8 +5,8 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 export const metadata = {
-  title: "Peering Services",
-  description: "Peering Services ",
+  title: "Cloud Services",
+  description: "Cloud Services ",
 };
 export default function Layout({ children }: LayoutProps) {
   return (

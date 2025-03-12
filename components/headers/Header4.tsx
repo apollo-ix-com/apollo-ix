@@ -11,17 +11,13 @@ export default function Header4() {
   const [scrollingUp, setScrollingUp] = useState<boolean>(false);
 
   useEffect(() => {
-    setPrevScrollPos(window.pageYOffset);
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = currentScrollPos < prevScrollPos;
-
-      setScrollingUp(currentScrollPos <= 80 ? false : isScrollingUp);
+      const currentScrollPos = window.scrollY;
+      setScrollingUp(currentScrollPos > 80 && currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

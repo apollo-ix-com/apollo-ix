@@ -1,5 +1,5 @@
-import { features, services } from "@/data/menu";
-// import Image from "next/image";
+import { features, featuresMenu, services } from "@/data/menu";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -100,7 +100,7 @@ export default function Nav1() {
           </div>
         </div>
       </li>
-      {/* <li className="has-dd-menu" style={{ position: "relative" }}>
+      <li className="has-dd-menu" style={{ position: "relative" }}>
         <a href="#" role="button" aria-haspopup="true">
           Resources{" "}
           <span
@@ -190,15 +190,15 @@ export default function Nav1() {
             </div>
           </div>
         </div>
-      </li> */}
+      </li>
+      <li>
+        <Link href={"/apollo-ix"} className={isActive("/apollo-ix") ? "uc-active" : ""}>Apollo-IX</Link>
+      </li>
       <li>
       <Link href={"/global"} className={isActive("/global") ? "uc-active" : ""}>Global</Link>
       </li>
       <li>
-        <Link href={"/about-us"} className={isActive("/about-us") ? "uc-active" : ""}>About</Link>
-      </li>
-      <li>
-      <Link href={"/contact-us"} className={isActive("/contact-us") ? "uc-active" : ""}>Contact</Link>
+      <Link href={"/contact"} className={isActive("/contact") ? "uc-active" : ""}>Contact</Link>
       </li>
     </>
   );

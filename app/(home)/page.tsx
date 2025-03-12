@@ -220,7 +220,7 @@ export default function HomePage() {
                                 htmlFor="uc_form_check_terms"
                                 className="hstack justify-between form-check-label fs-6"
                               >
-                                I read and accept the
+                                I read 
                                 <Link
                                   href={`#`}
                                   className="uc-link ltr:ms-narrow rtl:me-narrow"

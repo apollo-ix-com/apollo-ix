@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { GitBranchPlus, Network, ShieldCheck, Server, SatelliteDish } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Nav2() {
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href;
   return (
     <>
       <li>
         <Link href={`/`}>Home</Link>
       </li>
       <li className="has-dd-menu" style={{ position: "relative" }}>
-        <a href="#" role="button" aria-haspopup="true">
+        <a href="#" role="button" aria-haspopup="true" className={isActive("/peering-services") ? "uc-active" : ""}>
           Peering
           <span
             data-uc-navbar-parent-icon=""
@@ -32,13 +35,15 @@ export default function Nav2() {
             <div>
               <ul className="uc-nav uc-navbar-dropdown-nav p-2">
                 <li>
-                  <Link
-                    className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                <Link
+                    href="/peering-services"
+                    className={`hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5 ${
+                      isActive("/peering-services") ? "uc-active bg-gray-100 dark:bg-gray-800" : ""
+                    }`}
                   >
-                    <GitBranchPlus className="icon-1 text-primary dark:text-secondary" />
+                    <GitBranchPlus className={`icon-1 ${isActive("/peering-services") ? "dark:text-primary" : "dark:text-secondary"}`} />
                     <span className="vstack gap-narrow mt-nnarrow">
-                      <b className="fw-bold dark:text-white">Bilateral Peering</b>
+                      <b className={`fw-bold ${isActive("/peering-services") ? "dark:text-primary" : "dark:text-white"}`}>Bilateral Peering</b>
                       {/* <span className="fw-normal">
                       Custom agreements between networks for optimized, efficient traffic exchange.
                       </span> */}
@@ -47,8 +52,10 @@ export default function Nav2() {
                 </li>
                 <li>
                   <Link
-                    className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                    href="/peering-services"
+                    className={`hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5 ${
+                      isActive("/peering-services") ? "uc-active bg-gray-100 dark:bg-gray-800" : ""
+                    }`}
                   >
                     <Network className="icon-1 text-primary dark:text-secondary" />
 
@@ -61,9 +68,11 @@ export default function Nav2() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                <Link
+                    href="/peering-services"
+                    className={`hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5 ${
+                      isActive("/peering-services") ? "uc-active bg-gray-100 dark:bg-gray-800" : ""
+                    }`}
                   >
                                <ShieldCheck className="icon-1 text-primary dark:text-secondary" />
 
@@ -80,9 +89,11 @@ export default function Nav2() {
             <div>
               <ul className="uc-nav uc-navbar-dropdown-nav p-2 h-100 bg-gray-25 dark:bg-gray-300 dark:bg-opacity-5">
                 <li>
-                  <Link
-                    className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                <Link
+                    href="/peering-services"
+                    className={`hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5 ${
+                      isActive("/peering-services") ? "uc-active bg-gray-100 dark:bg-gray-800" : ""
+                    }`}
                   >
                     <Server className="icon-1 text-primary dark:text-secondary" />
 
@@ -95,9 +106,11 @@ export default function Nav2() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    className="hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-contact`}
+                <Link
+                    href="/peering-services"
+                    className={`hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5 ${
+                      isActive("/peering-services") ? "uc-active bg-gray-100 dark:bg-gray-800" : ""
+                    }`}
                   >
                     <SatelliteDish className="icon-1 text-primary dark:text-secondary" />
                     <span className="vstack gap-narrow mt-nnarrow">

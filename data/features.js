@@ -505,7 +505,7 @@ export const features6 = [
     imgAlt: "Achieve Global Reach with Remote Peering",
     title: "Achieve Global Reach with Remote Peering",
     description:
-      "Expand your network footprint with remote peering. Connect globally without additional infrastructure, ensuring seamless communication.",
+      "Expand your network footprint with remote peering. Connect globally without additional infrastructure, seamless communication.",
     link: { text: "Learn More About Remote Peering", href: "#" },
   },
 ];

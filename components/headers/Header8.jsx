@@ -8,25 +8,22 @@ import Solutions from "./Solutions";
 import { categories } from "@/data/menu";
 
 export default function Header8() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [scrollingUp, setScrollingUp] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const [scrollingUp, setScrollingUp] = useState<boolean>(false);
 
   useEffect(() => {
-    setPrevScrollPos(window.pageYOffset);
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = currentScrollPos < prevScrollPos;
-
-      setScrollingUp(currentScrollPos <= 80 ? false : isScrollingUp);
+      const currentScrollPos = window.scrollY;
+      setScrollingUp(currentScrollPos > 80 && currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
+  
   useEffect(() => {
     const header = document.querySelector(".header-nine .uc-navbar-container");
     const menuItems = document.querySelectorAll(".header-nine .has-dd-menu");

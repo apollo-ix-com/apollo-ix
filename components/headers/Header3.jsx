@@ -6,21 +6,17 @@ import Image from "next/image";
 import { openMobileMenu } from "@/utlis/toggleMobileMenu";
 
 export default function Header3() {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [scrollingUp, setScrollingUp] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+  const [scrollingUp, setScrollingUp] = useState<boolean>(false);
 
   useEffect(() => {
-    setPrevScrollPos(window.pageYOffset);
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      const isScrollingUp = currentScrollPos < prevScrollPos;
-
-      setScrollingUp(currentScrollPos <= 80 ? false : isScrollingUp);
+      const currentScrollPos = window.scrollY;
+      setScrollingUp(currentScrollPos > 80 && currentScrollPos < prevScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
